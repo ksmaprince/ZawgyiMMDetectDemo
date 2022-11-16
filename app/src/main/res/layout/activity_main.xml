@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:padding="8dp">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvUnicode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:text="Dark Energy ခေါ် အမှောင်စွမ်းအင် ဆိုတာကို အခုအချိန်ထိ မြင်နိုင်၊ တွေ့နိုင်၊ ခံစားနိုင်ခြင်း မရှိသေးပါဘူး။ ဒါဆို ဒီ dark energy ဆိုတဲ့ ထူးဆန်းတဲ့ စွမ်းအားက ဘာလဲ။"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/rgOption"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvUnicode">
+
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:id="@+id/rbOption1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="မြင်နိုင်ခြင်း"
+            android:checked="true"/>
+
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:id="@+id/rbOption2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="တွေ့နိုင်ခြင်း" />
+
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:id="@+id/rbOption3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dark Energy ခေါ် အမှောင်စွမ်းအင်" />
+    </RadioGroup>
+
+    <androidx.appcompat.widget.AppCompatCheckBox
+        android:id="@+id/chkOption1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/rgOption"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="သီဟိုဠ်မှ ဉာဏ်ကြီးရှင်သည်  "/>
+
+    <androidx.appcompat.widget.AppCompatCheckBox
+        android:id="@+id/chkOption2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/chkOption1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="အာယုဝဍ္ဎနဆေးညွှန်းစာကို "/>
+
+    <androidx.appcompat.widget.AppCompatCheckBox
+        android:id="@+id/chkOption3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/chkOption2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="ဇလွန်ဈေးဘေး ဗာဒံပင်ထက် အဓိဋ္ဌာန်လျက် "/>
+
+    <androidx.appcompat.widget.AppCompatCheckBox
+        android:id="@+id/chkOption4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/chkOption3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="ဂဃနဏဖတ်ခဲ့သည်။"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnUnicode1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:padding="10dp"
+        android:text="Dark Energy ခေါ် အမှောင်စွမ်းအင်"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/chkOption4" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnUnicode2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:padding="10dp"
+        android:text="သီဟိုဠ်မှ ဉာဏ်ကြီးရှင်"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnUnicode1" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="login_ads_margin">12dp</dimen>
+
+    <dimen name="fav_template_width">290dp</dimen>
+    <dimen name="fav_header_spacing_micro">4dp</dimen>
+</resources>
